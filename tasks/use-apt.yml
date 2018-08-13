@@ -17,7 +17,7 @@
   apt_key: url=https://packages.treasuredata.com/GPG-KEY-td-agent state=present
 
 - name: add td-agent repository
-  apt_repository: repo='deb https://packages.treasuredata.com/2/{{ ansible_distribution|lower }}/{{ ansible_distribution_release|lower }}/ {{ ansible_distribution_release|lower }} contrib' state=present
+  apt_repository: repo='deb https://packages.treasuredata.com/2.5/{{ ansible_distribution|lower }}/{{ ansible_distribution_release|lower }}/ {{ ansible_distribution_release|lower }} contrib' state=present
 
 
 - name: install td-agent
